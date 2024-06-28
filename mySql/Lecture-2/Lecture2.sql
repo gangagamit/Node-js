@@ -14,12 +14,9 @@
         select customer_name from client;
     --two column show in table
         select customer_id,customer_name from client;
-
     --colomn name change in table
-
         select customer_id as 'id' from client;
     --- marge two column in table
         select concat(customer_id, ' ',customer_name) as "customer_detail" from client;
     --repeat column
-
-    select * ,customer_name from client;
+        select * ,customer_name from client;
