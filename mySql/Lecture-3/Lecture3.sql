@@ -14,6 +14,11 @@ select * from clientmaster where city = 'Mumbai';
 update clientmaster set city = 'Mumbai' where city = 'Banglore';
 update clientmaster set city = 'Banglore' where clientNo = 'c0005';
 update clientmaster set Baldue = 1000 where clientNo = 'c0001';
+update clientmaster set city = 'Banglore' where clientNo = 'c0004';
+update clientmaster set city = 'Mumbai' where clientNo = 'c0005';
+update clientmaster set city = 'Banglore' where clientNo = 'c0005';
+
+delete from clientmaster where clientNo = 'c0002';
 
 update productmaster set description = 'Tops' where  description = 'T-shirts';
 
