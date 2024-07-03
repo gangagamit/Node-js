@@ -34,3 +34,32 @@ select * from students where city in ('surat','Gandhinagar');
 
 --NOT IN
 select * from students where city not in ('surat','Gandhinagar');
+
+--limit
+select * from students limit 4;
+
+--two column limit
+
+select firstname,lastname from students limit 5;
+
+--new database
+create database Data;
+
+use Data;
+--table
+create table details(firstname varchar(30),lastname varchar(30),salary int);
+--insert data
+insert into details values('Rohan','Gamit',40000),
+('Naina','vasava',32000),
+('Heena','patel',25000),
+('Neha','chaudhari',25000);
+--between
+select * from details where salary  between 30000 and 50000; 
+
+select * from details where salary in (25000,40000);
+
+select * from details where firstname in ('Rohan','Heena');
+
+select * from details where firstname not in ('Rohan','Heena');
+
+select * from details  limit 3;
