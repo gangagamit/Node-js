@@ -63,3 +63,7 @@ select * from details where firstname in ('Rohan','Heena');
 select * from details where firstname not in ('Rohan','Heena');
 
 select * from details  limit 3;
+
+
+
+
