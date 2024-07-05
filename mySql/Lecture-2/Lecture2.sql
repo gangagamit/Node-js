@@ -47,3 +47,7 @@
     ('s0002','Omkar','65','Nariman','Mumbai',40001,'Maharastra',3000,200,'Good'),
     ('s0003','Raj','p-7','Bandra','Mumbai',400032,'Maharastra',3000,200,'Good'),
     ('s0004','Ashis','A/5','juhu','Mumbai',400044,'Maharastra',3500,200,'Good');
+
+
+
+        insert into workers values('neha','varma',42000),('heen','mehta',48000),('Geeta','Gamit',49000);
