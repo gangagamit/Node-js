@@ -17,6 +17,7 @@ select * from  customers where country not in ('USA');
 -- 5. Fetch & display customers details(Customers table)  having customer number not in the range 150 to 200
 
 select *from customers where customerNumber not in (150,200);
+
 -- 6. List out last name, first name for all employees and rename  last name as “Name of the employee”, display as sorting order of their last name
  select lastName as 'Name of the employee' ,firstName  from employees  order by  lastName asc;
 
@@ -57,6 +58,8 @@ select * from customers where contactFirstName like 'S____';
 
 select * from customers where contactFirstName like '________';
 
+-- select * from customers where contactFirstName
+
 -- 17. List out the customers whose first name starting with a and ending with e
 
 select * from customers where contactFirstName like 'a%e';
@@ -69,7 +72,8 @@ select * from customers where contactFirstName like 'ee%';
 
 -- 19. Show Count of employees who are working in different office in the organization
 
-select count()
+select officeCode, count(*) from employees group by officeCode;
+
 -- 20. List out the maximum credit limit of customers belongs to different states
 
 select max(creditLimit) from customers;
