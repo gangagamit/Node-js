@@ -58,16 +58,14 @@ select * from customers where contactFirstName like 'S____';
 
 select * from customers where contactFirstName like '________';
 
--- select * from customers where contactFirstName
-
 -- 17. List out the customers whose first name starting with a and ending with e
 
-select * from customers where contactFirstName like 'a%e';
--->null answer
+select * from customers where contactFirstName like 'a%e ';
+
 
 -- 18. List out the customers whose first name contains ee
 
-select * from customers where contactFirstName like 'ee%';
+select * from customers where contactFirstName like '%ee%';
 -->Null answer
 
 -- 19. Show Count of employees who are working in different office in the organization
@@ -76,4 +74,4 @@ select officeCode, count(*) from employees group by officeCode;
 
 -- 20. List out the maximum credit limit of customers belongs to different states
 
-select max(creditLimit) from customers;
+select  max(creditLimit) from customers;
