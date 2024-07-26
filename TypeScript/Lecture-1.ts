@@ -29,14 +29,12 @@
 // }
 // console.log((conct2(1,789,"25")));
 
-
 // let a : [number,string] = [1,"John"];
 // console.log(a);
 // a.push(2,"Doe");
 // console.log(a);
 // a.pop();
 // console.log(a);
-
 // a.unshift(0,"Hello");
 // console.log(a);
 // a.shift();
