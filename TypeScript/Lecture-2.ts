@@ -1,9 +1,11 @@
+
+
 // enum color{
 //     RoyalBlue,red,orange,green
 // }
 
-// let colorCollection : color = color.RoyalBlue;
-
+// let colorCollection : color = color.orange;
+// console.log(colorCollection);
 
 
 // class str{
