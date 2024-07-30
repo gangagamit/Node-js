@@ -46,19 +46,36 @@ Ready to handle the next request.`
 // console.log("write successfully in Synchronous");
 
 
+
+ function add(a,b){
+    return a + b;
+ }
+
+ function sub(a,b){
+    return a - b;
+ }
 // 3)file read 
 //Asynchronous
+
+let a1 = performance.now();
+console.log('starting time ==>',a1);
+console.log('Addition',add(10,14));
 // fs.readFile('./text.txt','utf-8',(err,result)=>{
 //     if(err)
 //         console.log(err);
 //     else
-//         console.log('read successfully in Asynchronous')
+//         console.log(result)
 // });
 
 //Synchronous
 
-// let str = fs.readFileSync('./intro.txt','utf-8');
-// console.log(str);
+let str = fs.readFileSync('./intro.txt','utf-8');
+console.log(str);
+
+console.log('subtraction ==>',sub(10,14));
+let a2 = performance.now();
+console.log('Ending time',a2);
+console.log('difference time between a1 and a2',a1-a2);
 
 // 4)Append method
 //Asynchronous
